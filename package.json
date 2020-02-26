@@ -1,8 +1,7 @@
 {
-  "name": "cli",
+  "name": "ts-cli",
   "version": "1.0.0",
-  "description": "个人搭建的es6开发环境",
-  "main": "index.js",
+  "description": "个人搭建的ts开发环境",
   "scripts": {
     "dev": "webpack-dev-server --open --config webpack.config.js --env.development=1",
     "build": "webpack --config webpack.config.js --env.production=1",
@@ -42,6 +41,5 @@
     "webpack-dev-server": "^2.11.5"
   },
   "dependencies": {
-    "three": "^0.113.2"
   }
 }

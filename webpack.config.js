@@ -83,7 +83,7 @@ module.exports = function (env, argv) {
         },
         plugins: [
             new HtmlWebpackPlugin({
-                title:'全景视频编辑器', //html的title
+                title:'个人开发的ts开发环境', //html的title
                 filename:'./index.html',//打包好后，新建的html名字为first.html
                 template:'./app/page/index.html',//以src下面的index.html为模板去创建新的html文件
                 chunks:['main'],
