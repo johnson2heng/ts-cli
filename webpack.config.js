@@ -9,7 +9,7 @@ const webpack = require("webpack");
 module.exports = function (env, argv) {
     const config = {
         entry: {
-            main:"./app/main.ts"
+            main:"./src/main.ts"
         }, //已多次提及的唯一入口文件
         output: {
             path: path.resolve(__dirname, "./public"), //打包后的文件存放的地方
@@ -85,7 +85,7 @@ module.exports = function (env, argv) {
             new HtmlWebpackPlugin({
                 title:'个人开发的ts开发环境', //html的title
                 filename:'./index.html',//打包好后，新建的html名字为first.html
-                template:'./app/page/index.html',//以src下面的index.html为模板去创建新的html文件
+                template:'./src/page/index.html',//以src下面的index.html为模板去创建新的html文件
                 chunks:['main'],
                 //上线时减小html代码的规格,压缩代码
                 minify:{
